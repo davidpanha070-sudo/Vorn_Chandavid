@@ -1,0 +1,21 @@
+/* TODO */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+button{
+    background: pink;
+    border: 2px solid red;
+    transition: all 0.3s ease-in-out;
+
+    height: 100px;
+    width: 100px;
+}
+
+button:hover{
+    background:darkred; 
+    border: 2px solid black;
+    transform: scale(1.2);
+}
