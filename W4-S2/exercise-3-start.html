@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        .box{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        header{
+            display: flex;
+            border-radius: 0.5em;
+            background: #1e90ff;
+            width: auto;
+            height: 50px;
+            color: white;
+            font-weight: bold;
+            align-items: center;
+            padding-left: 15px;
+        }
+        .middle{
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+            
+        }
+        main{
+            background: #3cb371;
+            border-radius: 0.5em;
+            flex-grow: 1;
+            
+            padding-left: 15px;
+            
+
+        }
+        h3{
+            color: white;
+            font-weight: bold;
+        }
+        .items{
+            color: white;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 5px;
+            gap: 1rem;
+
+        }
+
+        item {
+            background: #2f8d59;
+            padding: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+
+        }
+
+        .sidebar{
+            display: flex;
+            background: #ff6347;
+            padding: 10px;
+            color: white;
+            font-weight: bold;
+            justify-content: flex-start;
+            border-radius: 0.5rem;
+            font-size: 15px;
+            width: 150px;
+
+        }
+        footer{
+            display: flex;
+            background: #4169e1;
+            border-radius: 0.5rem;
+            color: white;
+            height: 30px;
+            font-weight: bold;
+            align-items: center;
+            padding: 10px;
+            flex-grow: 1;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <header>header</header>
+        <div class="middle">
+            <main>
+                <h3>main</h3>
+
+                <div class="items">
+                    <item>Item1</item>
+                    <item>Item2</item>
+                    <item>Item3</item>
+                    <item>Item4</item>
+                    <item>Item5</item>
+                    <item>Item6</item>
+                    <item>Item7</item>
+                    <item>Item8</item>
+                </div>
+   
+            </main>
+            <div class="sidebar">sidebar</div>
+            
+        </div>
+        <footer>footer</footer>
+    </div>
+</body>
+</html>
