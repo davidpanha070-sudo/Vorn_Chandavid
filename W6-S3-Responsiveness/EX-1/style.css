@@ -1,0 +1,38 @@
+body{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+item{
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+@media (max-width: 1000px){
+    body{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        padding: 10px;
+    }
+
+}
+@media (max-width: 768px){
+    body{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 10px;
+    }
+
+}
+
+@media (max-width: 480px){
+    body{
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 10px;
+    }
+
+}

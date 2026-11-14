@@ -1,0 +1,48 @@
+
+bar{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    color: white;
+    background-color: black;
+    
+}
+.nav{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 10px;
+}
+h2{
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+}
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+}
+@media (max-width: 768px) {
+    .bar{
+        grid-template-columns: auto 1fr auto;
+    }
+    .nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        justify-self: end;
+        margin-right: 15px;
+    }
+}
